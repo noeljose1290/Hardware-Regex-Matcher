@@ -99,9 +99,7 @@ module tb ();
 
         #50;
         $display("Simulation finished.");
-`ifndef COCOTB_SIM
-        $finish;
-`endif
+        // We let Cocotb kill the simulation instead of calling $finish.
     end
 
     // Monitor match output
