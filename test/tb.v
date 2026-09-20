@@ -11,7 +11,7 @@ module tb ();
     reg clk;
     reg rst_n;
 
-    tt_um_noel_regex_matcher uut (
+    tt_um_regex_matcher uut (
         .ui_in(ui_in),
         .uo_out(uo_out),
         .uio_in(uio_in),
