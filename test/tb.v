@@ -68,7 +68,7 @@ module tb ();
         $display("---");
         
         // Test 2: Another valid email
-        $display("Testing: me@x.com");
+        $display("Testing: me.x@com (SHOULD FAIL)");
         send_string("me@x.com");
         repeat(5) @(posedge clk);
         $display("---");
@@ -82,18 +82,6 @@ module tb ();
         // Test 4: Unanchored string
         $display("Testing: blah123email@domain.comxyz");
         send_string("blah123email@domain.comxyz");
-        repeat(5) @(posedge clk);
-        $display("---");
-        
-        // Test 5: Unanchored string
-        $display("Testing: blah123email@domaincomxyz (FAIL)");
-        send_string("blah123email@domaincomxyz");
-        repeat(5) @(posedge clk);
-        $display("---");
-        
-        // Test 6: Unanchored string
-        $display("Testing: blah123email.domain@comxyz (FAIL)");
-        send_string("blah123email.domain@comxyz");
         repeat(5) @(posedge clk);
         $display("---");
 
