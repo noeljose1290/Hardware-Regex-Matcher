@@ -1,7 +1,7 @@
 # Tiny Tapeout project information
 project:
   title:        "Hardware Regex Matcher"      # Project title
-  author:       "Noel Jose"      # Your name
+  author:       "Noel Jose, Tinu P Mathew, Joseph Sathosh K"      # Your name
   discord:      "noeljose1290"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "Hardware NFA that streams 8-bit ASCII characters to match [a-z]+@[a-z]+\\.com"      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
